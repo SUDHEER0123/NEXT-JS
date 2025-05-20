@@ -1,0 +1,11 @@
+.mantine-Pill-remove {
+  --cb-icon-size: 16px;
+}
+
+.cancel-order-modal-bg {
+  background-color: white;
+  background-image: url('/images/red-vector.svg'), url('/images/yellow-vector.svg');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+}

@@ -1,0 +1,9 @@
+.tab {
+  &[data-active] {
+    @apply bg-neutrals-background-surface py-[14px] px-6 text-neutrals-high font-[700] text-[14px] leading-[20px] tracking-[0%];
+
+    @mixin hover {
+      background-color: black;
+    }
+  }
+}

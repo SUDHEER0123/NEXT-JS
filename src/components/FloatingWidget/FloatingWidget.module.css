@@ -1,0 +1,5 @@
+.mantine-input input::placeholder {
+  color: gray;
+  font-style: italic;
+  font-size: 14px;
+}

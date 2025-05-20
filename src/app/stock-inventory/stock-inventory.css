@@ -1,0 +1,6 @@
+.bg-gradient-test {
+  background: linear-gradient(0deg, var(--shading-shading, rgba(255, 255, 255, 0.2)), var(--shading-shading, rgba(255, 255, 255, 0.2))),
+  linear-gradient(0deg, var(--shading-shading, rgba(255, 255, 255, 0.2)), var(--shading-shading, rgba(255, 255, 255, 0.2))),
+  linear-gradient(0deg, var(--shading-shading, rgba(255, 255, 255, 0.2)), var(--shading-shading, rgba(255, 255, 255, 0.2))),
+  linear-gradient(0deg, var(--shading-shading, rgba(255, 255, 255, 0.2)), var(--shading-shading, rgba(255, 255, 255, 0.2)));
+}

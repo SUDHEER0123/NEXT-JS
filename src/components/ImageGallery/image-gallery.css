@@ -1,0 +1,7 @@
+.image-gallery-thumbnail {
+  @apply focus:outline-none hover:border-none;
+}
+
+.image-gallery-thumbnail.active {
+  @apply !border-[1px] !border-brand-secondary focus:outline-none;
+}

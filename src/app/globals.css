@@ -1,0 +1,341 @@
+* {
+  user-select: none;            /* Standard syntax */
+  -webkit-user-select: none;    /* Chrome, Safari */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* Internet Explorer/Edge */
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #00665E !important;
+  border-radius: 0px !important;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  @tailwind base;
+}
+
+@font-face {
+  font-family: 'Aston Martin Sans';
+  src: url('/fonts/AstonMartinSans_W_Rg.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aston Martin Sans';
+  src: url('/fonts/AstonMartinSans_W_Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aston Martin Sans';
+  src: url('/fonts/AstonMartinSans_W_Lt.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aston Martin Sans';
+  src: url('/fonts/AstonMartinSans_W_XBd.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aston Martin Sans';
+  src: url('/fonts/AstonMartinSans_W_Md.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aston Martin Sans';
+  src: url('/fonts/AstonMartinSans_W_BdIt.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aston Martin Sans';
+  src: url('/fonts/AstonMartinSans_W_LtIt.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aston Martin Sans';
+  src: url('/fonts/AstonMartinSans_W_XBdIt.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aston Martin Sans';
+  src: url('/fonts/AstonMartinSans_W_MdIt.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --ag-checkbox-border-radius: 0px;
+  overflow-y: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.body_regular_semibold {
+  font-family: var(--Familytypeface);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.body_small_semibold {
+  font-family: 'Aston Martin Sans';
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+}
+
+.body_small_bold {
+  font-family: 'Aston Martin Sans';
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 20px !important;
+}
+
+.body_small_regular {
+  font-family: 'Aston Martin Sans';
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+}
+
+.body_xs_regular {
+  font-family: 'Aston Martin Sans';
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+}
+
+.caption_semibold {
+  font-family: 'Aston Martin Sans';
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+  letter-spacing: 0.02em !important;
+}
+
+.caption_small_regular {
+  font-family: 'Aston Martin Sans';
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 15px !important;
+}
+
+.caption_small_semibold {
+  font-family: 'Aston Martin Sans';
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  line-height: 15px !important;
+}
+
+.caption_regular {
+  font-family: 'Aston Martin Sans';
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 18px !important;
+}
+
+.caption_xs_regular {
+  font-family: 'Aston Martin Sans';
+  font-size: 8px !important;
+  font-weight: 400 !important;
+  line-height: 12px !important;
+}
+
+.ag-header-cell-text {
+  font-family: 'Aston Martin Sans';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.ag-cell-value {
+  font-family: 'Aston Martin Sans';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.ag-root-wrapper {
+  @apply rounded-none border border-neutrals-low bg-neutrals-background-default border-b-transparent border-l-transparent;
+}
+
+.ag-header-row {
+  @apply bg-neutrals-background-surface;
+}
+
+.ag-cell {
+  @apply border-b border-b-neutrals-low;
+}
+
+.gradient-7-border {
+  border: 4px solid;
+  border-image-source: radial-gradient(82.11% 479.46% at 17.89% 10.71%, rgba(255, 255, 255, 0.2) 0%, rgba(153, 153, 153, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+/* Global styling for all input placeholders */
+input::placeholder,
+textarea::placeholder, 
+input::-webkit-input-placeholder, /* Safari/Chrome */
+textarea::-webkit-input-placeholder, 
+input:-moz-placeholder, /* Firefox 18- */
+textarea:-moz-placeholder, 
+input::-moz-placeholder, /* Firefox 19+ */
+textarea::-moz-placeholder, 
+input:-ms-input-placeholder, /* IE 10+ */
+textarea:-ms-input-placeholder {
+  color: gray !important;
+  font-style: italic !important;
+  font-size: 14px !important;
+}
+
+.m_396ce5cb:where([data-selected]) {
+  @apply bg-brand-primary rounded-full hover:bg-brand-primary text-white;
+}
+
+.sub_heading_3_semibold {
+  font-family: 'Aston Martin Sans';
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 24px !important;
+  text-align: left !important;
+}
+
+.caption_bold {
+  font-family: 'Aston Martin Sans';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+.caption_small_bold {
+  font-family: 'Aston Martin Sans';
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+
+.body_large_regular {
+  font-family: 'Aston Martin Sans';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+.body_regular_regular {
+  font-family: var(--Familytypeface);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+} 
+
+.body_large_bold {
+  font-family: var(--Familytypeface);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+
+.model-txt {
+  background: linear-gradient(180deg, #FEFFEB 0%, #D6FFFC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  
+.carousel-control {
+  &[data-inactive] {
+    opacity: 0;
+    cursor: default;
+  }
+}
+
+.body_large_semibold {
+  font-family: var(--Familytypeface);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+}
+
+.headings_2_semibold {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.caption_xs_semibold {
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: 0%;
+}
+
+.m_92253aa5:where([data-combobox-selected]) {
+  @apply bg-neutrals-background-shading;
+}
+
+.m_8fb7ebe7[data-disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: transparent;
+  color: var(--input-disabled-color);
+}

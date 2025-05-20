@@ -1,0 +1,7 @@
+.m_396ce5cb:where([data-selected]) {
+  @apply !bg-brand-primary rounded-full;
+}
+
+:root {
+  --input-height: 20px;
+}

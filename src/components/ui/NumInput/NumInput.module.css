@@ -1,0 +1,17 @@
+.customNumInput::placeholder {
+  @apply !text-neutrals-high;
+  font-family: 'Aston Martin Sans';
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+}
+
+.customNumInput {
+  @apply !text-neutrals-high;
+  font-family: 'Aston Martin Sans';
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+  min-height: 20px !important;
+  height: 20px !important;
+}

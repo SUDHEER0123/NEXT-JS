@@ -1,0 +1,11 @@
+.react-select__placeholder {
+  @apply text-xs;
+}
+
+.react-select__control {
+  @apply grid grid-cols-2;
+}
+
+.react-select__placeholder {
+  @apply col-span-1;
+}

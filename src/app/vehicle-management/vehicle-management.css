@@ -1,0 +1,15 @@
+.filter-input {
+  @apply font-aston text-neutrals-high pe-0 text-sm font-normal;
+}
+
+.filter-input::placeholder {
+  @apply !text-neutrals-high;
+}
+
+.mantine-ScrollArea-thumb {
+  @apply bg-brand-primary w-[60px];
+}
+
+.mantine-Input-input::placeholder {
+  @apply !text-neutrals-high text-[12px] leading-[18px] font-normal;
+}

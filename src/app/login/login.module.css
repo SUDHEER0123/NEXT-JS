@@ -1,0 +1,10 @@
+.login {
+  @apply h-full w-full opacity-[.99];
+}
+
+.login::before {
+  content: "";
+  @apply absolute inset-0 bg-cover bg-center bg-no-repeat filter brightness-50 h-full;
+  background-image: url('../../../public/images/background.jpg');
+  z-index: -1;
+}

@@ -1,0 +1,21 @@
+.card {
+  @apply border border-t-neutrals-low border-l-neutrals-low border-r-neutrals-low border-b-4 min-w-[287px] h-[110px] p-4 shadow-subtle-shadow2 grow;
+}
+
+/* Base card styles */
+.order-card {
+  @apply bg-neutrals-background-surface border-t-4 p-3 shadow-subtle-shadow2;
+}
+
+/* Modifier classes */
+.order-card--primary {
+  @apply border-t-brand-primary;
+}
+
+.order-card--secondary {
+  @apply border-t-brand-secondary;
+}
+
+.order-card--neutral {
+  @apply border-t-indications-neutral;
+}

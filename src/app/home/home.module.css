@@ -1,0 +1,17 @@
+.home {
+  @apply w-full h-full backdrop-blur-sm;
+}
+
+.home::before {
+  content: "";
+  @apply absolute top-0 left-0 w-full h-1/2 bg-cover bg-no-repeat filter brightness-50;
+  background-image: url('../../../public/images/background.jpg'); /* Top half with brightness */
+  z-index: -1;
+}
+
+.home::after {
+  content: "";
+  @apply absolute bottom-0 left-0 w-full h-1/2 bg-cover bg-no-repeat;
+  background-image: url('../../../public/images/background2.png'); /* Bottom half without brightness */
+  z-index: -1;
+}
